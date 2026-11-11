@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Rotinas do Rafael Carvalho</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CENÁRIO 3D DE FUNDO COM OBJETOS FLUTUANTES -->
+    <div class="bg-3d-scene">
+        <!-- Cubo 3D 1 -->
+        <div class="cube-container pos-1">
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+
+        <!-- Cubo 3D 2 -->
+        <div class="cube-container pos-2">
+            <div class="cube slow">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+        </div>
+
+        <!-- Anéis Tridimensionais Gira-Gira -->
+        <div class="ring-3d ring-1"></div>
+        <div class="ring-3d ring-2"></div>
+        <div class="pyramid-3d pos-3"></div>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <div class="app-container">
+        
+        <header class="header-3d">
+            <div class="badge-tag">Rotina Sync & Control v3.0</div>
+            <h1>Rotinas de <span>Rafael Carvalho</span></h1>
+            <p>Organizador Pessoal: Estudos, Gestão de Frota Coagru, Lazer, Hobbies e Saúde</p>
+        </header>
+
+        <!-- GRID DE CARDS DAS ROTINAS -->
+        <main class="cards-grid">
+
+            <!-- CARD ESTUDO -->
+            <article class="card-3d" data-modal="modal-estudo">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Estudos & Vestibular</h3>
+                <p class="card-desc">Escola diária (07h - 12h), despertador às 06h e cursinho pré-vestibular focado.</p>
+                <div class="card-tags">
+                    <span class="tag">06:00 Acordar</span>
+                    <span class="tag">Matemática</span>
+                    <span class="tag">Redação</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-modal" onclick="openModal('modal-estudo')"><i class="fa-solid fa-expand"></i> Detalhes</button>
+                    <a href="estudo.html" class="btn-page"><i class="fa-solid fa-arrow-right"></i> Abrir Página</a>
+                </div>
+            </article>
+
+            <!-- CARD TRABALHO -->
+            <article class="card-3d" data-modal="modal-trabalho">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3>Trabalho - Coagru</h3>
+                <p class="card-desc">Setor de Transporte: emissão de relatórios e administração da frota própria.</p>
+                <div class="card-tags">
+                    <span class="tag">Seg-Sex: 13h30-17h30</span>
+                    <span class="tag">Sáb: 08h-10h</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-modal" onclick="openModal('modal-trabalho')"><i class="fa-solid fa-expand"></i> Detalhes</button>
+                    <a href="trabalho.html" class="btn-page"><i class="fa-solid fa-arrow-right"></i> Abrir Página</a>
+                </div>
+            </article>
+
+            <!-- CARD LAZER -->
+            <article class="card-3d" data-modal="modal-lazer">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
+                <h3>Lazer & Namorada</h3>
+                <p class="card-desc">Tempo de qualidade, atividades juntos, passeios e momentos de conversa.</p>
+                <div class="card-tags">
+                    <span class="tag">Passeios</span>
+                    <span class="tag">Conversas</span>
+                    <span class="tag">Conexão</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-modal" onclick="openModal('modal-lazer')"><i class="fa-solid fa-expand"></i> Detalhes</button>
+                    <a href="lazer.html" class="btn-page"><i class="fa-solid fa-arrow-right"></i> Abrir Página</a>
+                </div>
+            </article>
+
+            <!-- CARD HOBBY -->
+            <article class="card-3d" data-modal="modal-hobby">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-gamepad"></i></div>
+                <h3>Hobby & Animes</h3>
+                <p class="card-desc">Maratona de animes e caça aos troféus de Platina em jogos Souls-like.</p>
+                <div class="card-tags">
+                    <span class="tag">Animes</span>
+                    <span class="tag">Platina Trophy</span>
+                    <span class="tag">Souls-like</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-modal" onclick="openModal('modal-hobby')"><i class="fa-solid fa-expand"></i> Detalhes</button>
+                    <a href="hobby.html" class="btn-page"><i class="fa-solid fa-arrow-right"></i> Abrir Página</a>
+                </div>
+            </article>
+
+            <!-- CARD SAÚDE -->
+            <article class="card-3d" data-modal="modal-saude">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                <h3>Saúde & Sono</h3>
+                <p class="card-desc">Rotina regrada de descanso, alimentação balanceada e acompanhamento médico anual.</p>
+                <div class="card-tags">
+                    <span class="tag">Sono Regrado</span>
+                    <span class="tag">Dieta Controlada</span>
+                    <span class="tag">Check-up Anual</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-modal" onclick="openModal('modal-saude')"><i class="fa-solid fa-expand"></i> Detalhes</button>
+                    <a href="saude.html" class="btn-page"><i class="fa-solid fa-arrow-right"></i> Abrir Página</a>
+                </div>
+            </article>
+
+            <!-- CARD ESPORTES -->
+            <article class="card-3d" data-modal="modal-esportes">
+                <div class="card-glow"></div>
+                <div class="card-icon"><i class="fa-solid fa-person-running"></i></div>
+                <h3>Esportes</h3>
+                <p class="card-desc">Sem prática de esportes atualmente. Espaço reservado para futuras atividades físico-recreativas.</p>
+                <div class="card-tags">
+                    <span class="tag">Pausa Atual</span>
+                    <span class="tag">Meta Futura</span>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-modal" onclick="openModal('modal-esportes')"><i class="fa-solid fa-expand"></i> Detalhes</button>
+                </div>
+            </article>
+
+        </main>
+
+        <footer class="footer-3d">
+            <p>Organizador de Rotinas — Rafael Carvalho &copy; 2026</p>
+        </footer>
+    </div>
+
+    <!-- MODAIS DE INFORMAÇÕES DETALHADAS -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+        <div class="modal-card" id="modalCard">
+            <button class="close-btn" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body" id="modalBody">
+                <!-- Conteúdo Injetado via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT EMBUTIDO -->
+    <script>
+        const modalData = {
+            'modal-estudo': {
+                title: '📚 Rotina de Estudos & Vestibular',
+                subtitle: 'Preparação Contínua & Foco Escolar',
+                details: `
+                    <ul>
+                        <li><strong>Despertador:</strong> 06:00 diariamente para organização e café da manhã.</li>
+                        <li><strong>Escola Regular:</strong> Segunda a Sexta-feira, das 07:00 às 12:00.</li>
+                        <li><strong>Cursinho Pré-Vestibular:</strong>
+                            <ul>
+                                <li><strong>Terça-feira:</strong> Foco intensivo em Matemática.</li>
+                                <li><strong>Quinta-feira:</strong> Português, Literatura e Redação.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                `,
+                link: 'estudo.html'
+            },
+            'modal-trabalho': {
+                title: '💼 Gestão de Transporte - Coagru',
+                subtitle: 'Administração de Frota & Relatórios Gerenciais',
+                details: `
+                    <ul>
+                        <li><strong>Empresa:</strong> Cooperativa Agroindustrial Coagru.</li>
+                        <li><strong>Setor:</strong> Transporte & Logística.</li>
+                        <li><strong>Funções:</strong> Confecção de relatórios operacionais e administração técnica da frota própria.</li>
+                        <li><strong>Horários:</strong>
+                            <ul>
+                                <li><strong>Segunda a Sexta:</strong> 13:30 às 17:30</li>
+                                <li><strong>Sábado:</strong> 08:00 às 10:00</li>
+                            </ul>
+                        </li>
+                    </ul>
+                `,
+                link: 'trabalho.html'
+            },
+            'modal-lazer': {
+                title: '❤️ Tempo de Lazer & Convivência',
+                subtitle: 'Relacionamento & Desconexão',
+                details: `
+                    <ul>
+                        <li><strong>Prioridade de Lazer:</strong> Dedicar tempo de qualidade com a namorada.</li>
+                        <li><strong>Atividades Frequentes:</strong>
+                            <ul>
+                                <li>Passeios e encontros no final de semana ou após o expediente.</li>
+                                <li>Conversas, planejamento conjunto e momentos relaxantes.</li>
+                                <li>Atividades dinâmicas a dois para desacelerar da rotina de estudo e trabalho.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                `,
+                link: 'lazer.html'
+            },
+            'modal-hobby': {
+                title: '🎮 Gaming Souls-like & Animes',
+                subtitle: 'Paixão por Desafios & Cultura Pop Japonesa',
+                details: `
+                    <ul>
+                        <li><strong>Assistir Animes:</strong> Acompanhamento de temporadas, shonens, isekais e grandes obras da animação japonesa.</li>
+                        <li><strong>Gaming & Platinas:</strong> Foco em zerar 100% e conquistar a **Platina** em jogos da categoria *Souls-like* (ex: Elden Ring, Dark Souls, Sekiro, Bloodborne).</li>
+                    </ul>
+                `,
+                link: 'hobby.html'
+            },
+            'modal-saude': {
+                title: '🧘 Manutenção da Saúde & Sono',
+                subtitle: 'Equilíbrio Físico & Mental',
+                details: `
+                    <ul>
+                        <li><strong>Rotina do Sono:</strong> Horários regulares para dormir e acordar religiosamente às 06:00.</li>
+                        <li><strong>Alimentação:</strong> Controle de refeições sem exageros para manter a energia no pico durante os horários de estudo e trabalho.</li>
+                        <li><strong>Manutenção Médica:</strong> Consultas e exames preventivos realizados anualmente.</li>
+                    </ul>
+                `,
+                link: 'saude.html'
+            },
+            'modal-esportes': {
+                title: '🏃 Esportes & Exercícios',
+                subtitle: 'Status Atual da Prática Esportiva',
+                details: `
+                    <ul>
+                        <li><strong>Status Atual:</strong> Não pratica esportes no momento devido à carga intensa de escola, cursinho e trabalho na cooperativa.</li>
+                        <li><strong>Recomendação Futura:</strong> Incluir caminhadas leves ou treinos curtos quando houver reorganização de grade horária.</li>
+                    </ul>
+                `,
+                link: null
+            }
+        };
+
+        function openModal(id) {
+            const data = modalData[id];
+            if (!data) return;
+
+            const modalBody = document.getElementById('modalBody');
+            let linkButtonHTML = data.link 
+                ? `<a href="${data.link}" class="btn-modal-action"><i class="fa-solid fa-arrow-right-to-bracket"></i> Acessar Página Dedicada</a>` 
+                : '';
+
+            modalBody.innerHTML = `
+                <h2>${data.title}</h2>
+                <p class="modal-subtitle">${data.subtitle}</p>
+                <div class="modal-details-content">${data.details}</div>
+                ${linkButtonHTML}
+            `;
+
+            document.getElementById('modalOverlay').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+
+        function closeModalOnOverlay(event) {
+            if (event.target.id === 'modalOverlay') {
+                closeModal();
+            }
+        }
+
+        // Efeito Parallax 3D
+        document.querySelectorAll('.card-3d').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = ((y - centerY) / centerY) * -12;
+                const rotateY = ((x - centerX) / centerX) * 12;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(15px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px)`;
+            });
+        });
+    </script>
+</body>
+</html>
